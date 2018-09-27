@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">faceLibrary</string>
+    <string name="permission_face_title">录入面部信息</string>
+    <string name="permission_face_content">为获得最佳面部效果，请将手机与面部保持20到50厘米的距离，同时避免在强光或暗光环境录入。</string>
+    <string name="permission_face_continue">继续</string>
+    <string name="permission_face_cancle">取消</string>
+
+</resources>

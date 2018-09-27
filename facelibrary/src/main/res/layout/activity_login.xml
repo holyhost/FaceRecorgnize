@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"
+        />
+
+    <TextView
+        android:textSize="18sp"
+        android:text="用户名："
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_left"
+        app:layout_constraintTop_toTopOf="@+id/gl_top"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_left"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        />
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:text="密     码："
+        android:id="@+id/tv_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintRight_toRightOf="@+id/tv_name"
+        />
+    <EditText
+
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        app:layout_constraintTop_toTopOf="@+id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name"
+        android:background="@null"
+        android:hint="请输入用户名"
+        />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        app:layout_constraintTop_toTopOf="@+id/tv_pwd"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_pwd"
+        app:layout_constraintLeft_toRightOf="@+id/tv_pwd"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd"
+        app:layout_constraintLeft_toLeftOf="@+id/gl_left"
+        app:layout_constraintRight_toRightOf="@+id/gl_right"
+        />
+    <TextView
+        android:layout_marginTop="19dp"
+        android:textSize="15sp"
+        android:text="人脸登录"
+        android:id="@+id/tv_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd"
+        app:layout_constraintRight_toRightOf="@id/gl_right"
+
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="登录"
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_face"
+        app:layout_constraintLeft_toLeftOf="@id/gl_left"
+        app:layout_constraintRight_toRightOf="@id/gl_right"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
