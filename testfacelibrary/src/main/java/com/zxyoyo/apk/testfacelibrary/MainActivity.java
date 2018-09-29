@@ -10,12 +10,12 @@ import com.zxyoyo.apk.facelibrary.FaceTool;
 public class MainActivity extends AppCompatActivity {
 
 
-    String appid = "4kJeDdya4nBo6jZVp3GXkXaeEDBeRa3CPzd1u7Nzs5fv";
-    String ft_key = "48kjwtUjPiExKWEjSBWLbqKfDdErk8bb6VVkMHn4EEvt";
-    String fd_key = "48kjwtUjPiExKWEjSBWLbqKnP2W644qbfTmGfTXm4LTo";
-    String fr_key = "48kjwtUjPiExKWEjSBWLbqLH2dYms5JkmszFtXC7esNw";
-    String age_key = "48kjwtUjPiExKWEjSBWLbqLXMS56eETBjkhWXeeZcxLy";
-    String gender_key = "48kjwtUjPiExKWEjSBWLbqLeWqLHKytwrA6YAg47HVmt";
+    String appid = "";
+    String ft_key = "";
+    String fd_key = "";
+    String fr_key = "";
+    String age_key = "";
+    String gender_key = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
